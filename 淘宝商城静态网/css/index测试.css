@@ -1,0 +1,734 @@
+
+@import url(reset.css);
+
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+      url('../font/iconfont.woff2') format('woff2'),
+      url('../font/iconfont.woff') format('woff'),
+      url('../font/iconfont.ttf') format('truetype'),
+      url('../font/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 18px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#headSearch{
+  background-color: #fff;
+  padding: 24px 0 10px 0;
+}
+#headSearch h1{
+  display: block;
+  width:190px;
+  height: 58px;
+  background: url(../image/taobao.png) center no-repeat;
+  background-size: 190px 58px;
+  text-indent: -9999px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+
+#headSearch .code{
+  width:72px;
+  height: 86px;
+  margin-right: 110px;
+  text-align: center;
+  border:1px solid #eee;
+  position:relative;
+  margin-top: -90px;
+}
+#headSearch .code img{
+  width:62px;
+  height: 62px;
+}
+
+#headSearch .code .close{
+  position:absolute;
+  width:14;
+  height: 14px;
+  line-height: 14px;
+  font-size: 14px;
+  border: 1px solid #eee;
+  left: -16px;
+  top: -1px;
+  color: #eee;
+  cursor: pointer;
+}
+
+#headSearch .search{
+  width:620px;
+  margin: 0 auto;
+}
+#headSearch .search li:hover{
+  background-color: #ffeee5;
+}
+
+
+#headSearch .searchTab{
+  height: 22px;
+  padding-left: 17px;
+}
+#headSearch .searchTab li{
+  float: left;
+  width:36px;
+  line-height:22px;
+/*  background: pink;*/ 
+  margin-right: 4px;
+  text-align: center;
+  color: #f40;
+  cursor: pointer;
+}
+#headSearch .searchTab li.active{
+  color: #fff;
+ /* background:#f40;*/
+  font-weight: bold;
+  border-radius: 6px 6px 0 0;
+  background-image: linear-gradient(to right,#ff9000,#ff5000);
+  ilter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff9000', endColorstr='#ffff5000', GradientType=1);
+  /*ie8可用*/
+
+}
+#headSearch .searchContent{
+  height: 40px;
+}
+#headSearch .searchBox {
+  width:546px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 2px solid #ff5000;
+  border-radius: 20px 0 0 20px;
+  overflow: hidden;
+  border-right:none;
+  position:relative;
+}
+#headSearch .searchContent input{
+  width:490px;
+  height: 36px;
+  line-height: 36px;
+  border:none;
+  outline: none;
+  position:absolute;
+  text-indent: 10px;
+  z-index: 1;
+  background: transparent;
+}
+#headSearch .placeholder{
+  position:absolute;
+  top: 6px;
+  left:14px;
+}
+#headSearch .placeholder span{
+  color: #9c9c9c;
+  vertical-align: 3px;
+}
+#headSearch .imgSearch{
+  position:absolute;
+  font-size:28px; 
+  right:20px;
+  color: #9c9c9c;
+  top:-2px;
+  cursor: pointer;
+}
+#headSearch .searchContent button{
+/*  background: #f40;*/
+  width:74px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  background-image: linear-gradient(to right,#ff9000,#ff5000);
+  ilter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff9000', endColorstr='#ffff5000', GradientType=1);
+  /*ie8可用*/
+}
+#headSearch .hotKey{
+  height: 25px;
+  line-height: 25px;
+}
+#headSearch .hotKey a:hover{
+  color: #f40;  
+}
+
+
+/*导航*/
+#nav h2{
+  width:190px;
+  height:30px ;
+  line-height: 30px;
+/*  font-size: ;*/
+  font-weight: bold;
+  color: #fff;
+  background-color: #f50;
+  text-align: center;
+}
+#nav ul{
+  width: calc(100% - 190px);
+  height: 30px;
+  background-image: linear-gradient(to right,#ff9000,#ff5000);
+  ilter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff9000', endColorstr='#ffff5000', GradientType=1);
+  /*ie8可用*/
+}
+#nav ul li.size{
+  font-size: 16px;
+}
+#nav ul li.line{
+  margin: 0;
+  padding: 0; 
+}
+#nav ul li{
+  float: left;
+  line-height: 30px;
+  margin: 0 7px;
+  font-size: 14px;
+  color: #fff;
+  padding: 0 5px;
+  position: relative;
+}
+#nav ul li:hover::before{
+  content: '';
+  position:absolute;
+  width: 23px;
+  height: 13px;
+  background: url(../image/ico_01.png) no-repeat;
+  background-size: 23px 13px;
+  top:-13px;
+  left: 50%;
+  margin-left: -12px;
+}
+#nav ul li a{
+  color: #fff;
+   font-weight: bold;
+}
+
+/*首屏内容*/
+/*侧边导航*/
+#firstScreen .firstLeft{
+  width:890px;
+
+  
+} 
+/*侧边导航栏*/
+#firstScreen .sideNav{
+  width:190px;
+  height: 522px;
+  background: #ddd;
+  float: left;
+  background: #fff;
+  box-sizing: border-box;
+  border:2px solid #ff5000;
+  border-top: none;
+  padding-top: 5px
+}
+#firstScreen .sideNav li{
+  height: 32px;
+  line-height:32px; 
+  padding-left: 25px;
+  color: #999;
+  font-size: 14px;
+}
+#firstScreen .sideNav li:hover{
+  background: #ffe4dc;
+  color: #f50;
+  transition: background-color 0.5s;
+
+}
+#firstScreen .sideNav li:hover a{
+  color: #f50;
+}
+
+#firstScreen .sideNav li a
+{
+  font-size:14px ;
+  color: #666;
+
+}
+#firstScreen .sideNav li a:hover{
+  text-decoration: underline;
+}
+#firstScreen .sideNav li span{
+  font-size: 12px;
+  padding-right: 5px;
+}
+
+
+/*图片1容器*/
+#firstScreen .img1Box{
+  width:690px;
+  height: 282px;
+  background: #eee;
+/*  float: right;*/
+  margin-top:10px; 
+}
+#firstScreen .pic{
+  width: 520px;
+  position:relative;
+}
+#firstScreen .img1Box .pic .img{
+  width: 520px;
+  height: 280px;
+}
+#firstScreen .img1Box .pic .img img{
+  width: 520px;
+  height: 280px;
+}
+#firstScreen  .pic button{
+  position: absolute;
+  width: 20px;
+  height: 30px;
+  line-height: 30px;
+  border:none;
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.3);
+  top:50%;
+  margin-top: -15px;
+  color: #fff;
+  display: none;
+}
+#firstScreen .pic:hover button{
+  display: block;
+}
+#firstScreen  .pic button.leftBtn{
+  left: 0px;
+  border-radius:0 15px 15px 0;
+
+}
+
+#firstScreen .pic button.rightBtn{
+  right:0;
+  border-radius :15px 0 0 15px;
+}
+#firstScreen .pic .circle{
+  position: absolute;
+  bottom: 15px;
+  background-color: rgba(255,255,255,0.3);
+  left: 50%;
+  padding: 3px 0;
+  font-size: 0;
+  border-radius: 10px;
+  margin-left: -35px;
+
+
+}
+#firstScreen .pic .circle span{
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 3px;
+  cursor: pointer;
+}
+#firstScreen .pic .circle .active{
+  background: #ff5000;
+}
+#firstScreen .img1Box .ad{
+  width: 160px;
+ 
+}
+#firstScreen .img1Box .ad img{
+  width: 160px;
+}
+
+
+
+
+
+
+
+/*图片2容器*/
+#firstScreen .img2Box{
+  width:690px;
+  height: 220px;
+  background: #fff;
+  float: right;
+  margin-top: 10px;
+}
+
+#firstScreen .img2Box .picTitle{
+  width: ;
+  height: 20px;
+}
+#firstScreen .img2Box .picTitle .text{
+  height: 17px;
+  line-height: 17px;
+}
+#firstScreen .img2Box .picTitle .text .bg{
+  display: block;
+  width: 136px;
+  height: 19px;
+  background: url(../image/ico_03.png) no-repeat left;
+  background-size:122px 22px ;
+  padding-left: 136px;
+  color: #666;
+}
+#firstScreen .img2Box .picTitle .text i{
+  color: #ff1648;
+}
+#firstScreen .img2Box .picTitle .line{
+  width: ;
+  height: 3px;
+  background-color: #ff1648 ;
+  position:relative;
+
+}
+#firstScreen .img2Box .picTitle .line span{
+  position: absolute;
+  height: 3px;
+  width: 87px;
+  background-color: #000;
+  left:0px;
+}
+
+
+
+#firstScreen .img2Box .img{
+  height: 200px;
+  width: 520px;
+  background-color: #fff;
+  position: relative;
+
+  display: table-cell;
+  vertical-align: middle;
+  /*display: flex;
+  justify-content: space-around;
+  align-items: center;ie10+*/
+}
+#firstScreen .img2Box .img img{
+  width: 250px;
+  height: 190px;
+  margin: 0 5px;
+}
+#firstScreen .img2Box .ad .title{
+  line-height: 20px;
+  height: 20px;
+  color: #a1a1a1;
+  background: #f1f1f1;
+}
+
+
+
+
+/*淘宝头条*/
+#firstScreen .news{
+  width: 890px;
+  height: 100px;
+  background: #fff;
+ /* float: left;*/
+  margin-top: 10px;
+  box-sizing: border-box;
+  padding: 13px 13px 13px 20px;
+}
+#firstScreen .news .hd{
+  margin-top: 15px;
+}
+#firstScreen .news .hd h3{
+  width: 129px;
+  height: 26px;
+  background: url(../image/toutiao.png) no-repeat;
+  background-size: 129px 26px;
+  text-indent: -9999px;
+  overflow: hidden;
+  }
+#firstScreen .news .hd p{
+  color: #999;
+  height: 24px; 
+  line-height: 24px;
+}
+#firstScreen .news .newList{
+  width: 680px;
+  position: relative;
+}
+#firstScreen .news .newList img{
+  width: 130px;
+  height: 73px;
+  margin-right: 15px;
+  margin-left: 3px;
+}
+#firstScreen .news .newList h4{
+  height: 28px;
+  line-height: 28px;
+  font-size: 16px;
+  font-weight: normal;
+}
+#firstScreen .news .newList h4 a{
+  color: #333;
+}
+#firstScreen .news .newList h4 a:hover{
+  color: #ff5000;
+}
+#firstScreen .news .newList p{
+  line-height: 18px;
+  font-size: 14px;
+
+}
+#firstScreen .news .newList p a{
+  color: #999;
+}
+#firstScreen .news .newList .more{
+  position: absolute;
+  top: 0;
+  right:0;
+  color: #999;
+}
+#firstScreen .news .newList .more:hover{
+  color: #ff5000;
+}
+
+
+
+
+
+/*右边内容*/
+#firstScreen .firstRight{
+  width:290px;
+  height: 621px;
+  background: #fff;
+  margin-top: 10px;
+}
+#firstScreen .firstRight .users{
+  width: ;
+  height: 140px;
+  background-image: url(../image/background_01.png);
+  background-size: 290px 140px;
+  padding-top: 5px;
+}
+#firstScreen .firstRight .users .avatar{
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+#firstScreen .firstRight .users img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#firstScreen .firstRight .users .username{
+  line-height: 16px;
+  text-align:center;
+  height: 16px;
+  font-size: ;
+  color: ; 
+}
+#firstScreen .firstRight .users .username strong{
+  color: #999;
+  font-weight: normal;
+}
+#firstScreen .firstRight .users .member{
+  text-align: center;
+  font-size: 0;
+}
+#firstScreen .firstRight .users .member a{
+  display: inline-block;
+  font-size:12px;
+  height: ;
+  line-height: ;
+  color: ;
+  border-radius: 9px;
+  background: #ffe4dc;
+  padding: 0 10px 0 20px;
+  margin: 0 2px;
+}
+#firstScreen .firstRight .users .member a.gold{
+  background: #ffe4dc url(../image/ico_02.png) 0 -572px no-repeat;
+  background-size: 24px 597px;
+}
+#firstScreen .firstRight .users .member a.club{
+  background: #ffe4dc url(../image/ico_02.png) 0 -528px no-repeat;
+  background-size: 24px 597px;
+}
+#firstScreen .firstRight .users .btn{
+  text-align: center;
+/*  font-size: 0;*/
+
+}
+
+#firstScreen .firstRight .users .btn button{
+  width: 75px;
+  height: 25px;
+  line-height: 25px;
+  margin: 12px 2px 0 2px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 4px;
+  background-image: linear-gradient(to right,#ff9000,#ff5000);
+  /*ie10以上可用*/
+  ilter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff9000', endColorstr='#ffff5000', GradientType=1);
+  /*ie8可用*/
+  border:none;
+  cursor: pointer;
+}
+#firstScreen .firstRight .users .btn button.login{
+  width: 92px;
+}
+#firstScreen .firstRight .tipOff{
+  display:block;
+  width:290px ;
+  height:26px ;
+  line-height: 26px;
+  background:#ffe4dd ;
+  font-size: 12px;
+  color: #f40;
+  text-align: center;
+}
+#firstScreen .firstRight .tipOff i{
+  font-size: 12px;
+  position:relative;
+  left: 30px;
+}
+/*举报*/
+#firstScreen .firstRight .notice{
+  height: 108px;
+  background-color: #fff;
+
+}
+#firstScreen .firstRight .notice .title{
+  text-align: center;
+  font-size: 0;
+  padding-top: 10px;
+}
+#firstScreen .firstRight .notice .title li{
+  display: inline-block;  
+  font-size: 12px;
+  line-height: 20px;
+  margin:0 10px ;
+  padding: 0 4px;
+}
+#firstScreen .firstRight .notice .title a.active{
+  font-weight: bold;
+  border-bottom:2px solid #f40;
+}
+#firstScreen .firstRight .title a:hover{
+  color: #ff5000;
+/*  font-weight: bold;*/
+  border-bottom:2px solid #f40;
+  transition: 0.5s;
+}
+#firstScreen .firstRight .notice .content{
+  margin: 0 12px;
+  padding-top: 10px;
+}
+#firstScreen .firstRight .notice .content li{
+  height: 25px;
+  line-height: 25px;
+  overflow: hidden;
+  float: left;
+  width: 130px;
+}
+#firstScreen .firstRight .notice .content li.item1{
+  width: 100%;
+  color: #ff5000;
+}
+#firstScreen .firstRight .notice .content li.item1 a{
+
+  color: #ff5000;
+}
+#firstScreen .firstRight .notice .content li a:hover{
+  color: #ff5000;
+}
+#firstScreen .firstRight .icon{
+  width: 100%;
+  height: 234px;
+  background-color: #fff;
+  table-layout: fixed; 
+}
+#firstScreen .firstRight .icon td{
+  border:1px solid #f4f4f4;
+  text-align: center;
+}
+#firstScreen .firstRight .icon span{
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: 0 auto;
+  background: url(../image/ico_02.png) no-repeat;
+  background-size: 24px 597px
+
+}
+#firstScreen .firstRight .icon .item1 span{
+  background-position: 0 0;
+}
+#firstScreen .firstRight .icon .item2 span{
+  background-position: 0 -44px;
+}
+#firstScreen .firstRight .icon .item3 span{
+  background-position: 0 -88px;
+}
+#firstScreen .firstRight .icon .item4 span{
+  background-position: 0 -132px;
+}
+#firstScreen .firstRight .icon .item5 span{
+  background-position: 0 -176px;
+}
+#firstScreen .firstRight .icon .item6 span{
+  background-position: 0 -220px;
+}
+#firstScreen .firstRight .icon .item7 span{
+  background-position: 0 -264px;
+}
+#firstScreen .firstRight .icon .item98 span{
+  background-position: 0 -308px;
+}
+#firstScreen .firstRight .icon .item9 span{
+  background-position: 0 -352px;
+}
+#firstScreen .firstRight .icon .item10 span{
+  background-position: 0 -396px;
+}
+#firstScreen .firstRight .icon .item11 span{
+  background-position: 0 -440px;
+}
+#firstScreen .firstRight .icon .item12 span{
+  background-position: 0 -484px;
+}
+#firstScreen .firstRight .icon td i{
+  color: #333;
+  line-height: 34px;;
+}
+/*app*/
+#firstScreen .firstRight .app{
+  height: 111px;
+  background: #fff;
+}
+#firstScreen .firstRight .app .title1{
+  height: 30px;
+  line-height: 30px;
+}
+#firstScreen .firstRight .app .title1 h3{
+  font-size: 14px;
+  padding-left: 13px;
+}
+#firstScreen .firstRight .app .title1 a{
+  font-size: 12px;
+  margin-right: 10px;
+}
+#firstScreen .firstRight .app .title1 a:hover{
+  color: #f40;
+}
+#firstScreen .app .appIcon{
+  text-align: center;
+  font-size: 0;
+}
+#firstScreen .app .appIcon li{
+  float: left;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  /*margin: 0 10px 8px 10;*/
+  margin-left: 21px;
+  margin-bottom: 8px;
+}
+#firstScreen .app .appIcon img{
+  width: 32px;
+  height: 32px;
+}
